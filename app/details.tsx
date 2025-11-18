@@ -1,4 +1,5 @@
 import { useLocalSearchParams } from "expo-router";
+import { useEffect } from "react";
 import { ScrollView, StyleSheet } from "react-native";
 
 
@@ -7,6 +8,17 @@ export default function Details() {
   const params = useLocalSearchParams();
 
 	console.log(params.name);
+
+	useEffect(() => {}, [])
+
+	async function fetchPokemonsByName(name: string) {
+		try {
+			
+		} catch (error) {
+			
+		}
+	
+	}
 
   return (
     <ScrollView
